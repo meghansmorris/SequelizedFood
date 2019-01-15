@@ -1,0 +1,20 @@
+body {
+    background-image: url("../img/Summer_Picnic_Burger.png");
+    background-repeat: repeat;
+}
+
+.card {
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Shadows Into Light Two', cursive;
+    font-size-adjust: unset;
+    font-size: 70px;
+    color: #014351;
+}
+
+li {
+    color: #014351;
+}
+
