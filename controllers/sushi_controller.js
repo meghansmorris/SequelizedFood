@@ -11,13 +11,13 @@ router.get("/", function(req, res) {
  })
 });
 
-router.post("/api/sushis", function(req, res) {
+router.post("/api/sushi", function(req, res) {
  db.Eatsushi.create(req.body).then(function(dbSushi) {
    res.json(dbSushi);
  })
 });
 
-router.put("/api/sushis/:id", function(req, res) {
+router.put("/api/sushi/:id", function(req, res) {
   db.Eatsushi.update(
     req.body,
     {
