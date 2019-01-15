@@ -9,7 +9,7 @@ $(function() {
       };
   
       // Send the PUT request.
-      $.ajax("/api/burgers/" + id, {
+      $.ajax("/api/sushis/" + id, {
         type: "PUT",
         data: newDevourState
       }).then(
@@ -25,17 +25,17 @@ $(function() {
       // Make sure to preventDefault on a submit event.
       event.preventDefault();
   
-      var newBurger = {
-        burger_name: $("#burgerNameInput").val().trim(),
+      var newSushi = {
+        sushi_name: $("#sushiNameInput").val().trim(),
       };
   
       // Send the POST request.
-      $.ajax("/api/burgers/", {
+      $.ajax("/api/sushis/", {
         type: "POST",
-        data: newBurger
+        data: newSushi
       }).then(
         function() {
-          console.log("created new burger");
+          console.log("created new sushi");
           // Reload the page to get the updated list
           location.reload();
         }
